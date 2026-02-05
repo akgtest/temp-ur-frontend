@@ -283,9 +283,9 @@ export default function Hero() {
   };
 
   return (
-    <main className="heroSection position-relative overflow-hidden">
+    <main className="heroSection position-relative z-0">
       <Image
-        src="/img/heroImage.jpg"
+        src="https://d16gdc5rm7f21b.cloudfront.net/uploads/1768570493925-elie-saab.webp"
         alt="Hero Image"
         fill
         className="object-fit-cover"
@@ -296,12 +296,12 @@ export default function Hero() {
         blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
         sizes="100vw"
       />
-      <div className="heroSearch position-absolute top-50 start-50 translate-middle w-100 px-2 px-md-5">
+      <div className="heroSearch position-absolute z-10 top-100 start-50 translate-middle w-100 px-2 px-md-5">
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-12 col-md-10 col-lg-8">
               <div
-                className="searchContainer rounded-4 shadow-lg p-3 p-md-5"
+                className="searchContainer rounded-4 shadow-lg p-3 p-md-5 bg-white"
                 style={{
                   background: "rgba(255, 255, 255, 0.1)",
                   backdropFilter: "blur(20px)",
@@ -502,10 +502,10 @@ export default function Hero() {
                   // Buy/Rent Tabs - Search functionality
                   <>
                     {/* Search Input */}
-                    <div className="position-relative mb-3">
+                    <div className="position-relative mb-3 ">
                       <div className="input-group">
                         <span
-                          className="input-group-text border-end-0"
+                          className="input-group-text border border-[#dcdcdc]"
                           style={{
                             background: "rgba(255, 255, 255, 0.2)",
                             border: "1px solid rgba(255, 255, 255, 0.3)",
@@ -515,7 +515,7 @@ export default function Hero() {
                         >
                           <i
                             className="bi bi-geo-alt-fill"
-                            style={{ color: "rgba(255, 255, 255, 0.8)" }}
+                            style={{ color: "rgba(0, 0, 0, 0.8)" }}
                           ></i>
                         </span>
                         <input
