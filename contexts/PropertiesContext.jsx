@@ -72,7 +72,8 @@ export function PropertiesProvider({ children }) {
 
   // Specific builder's properties
   const getSpecificBuilderProperties = (id = "69044fd82f7aeb649593f2f9") => {
-    return [...properties].filter((p) => p.builder === id);
+    console.log(properties[0]);
+    return [...properties].filter((p) => p.builder._id === id);
   };
 
   const getBuilderProperties = (limit = 100) => {

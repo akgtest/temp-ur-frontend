@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "cp env.development .env && next dev -p 3000",
+    "dev": "next dev -p 3000",
     "dev:local": "cp env.development .env && BACKEND_URL=http://localhost:3012 next dev -p 3000",
     "dev:env": "cp env.development .env",
     "prod:env": "cp env.production .env",
